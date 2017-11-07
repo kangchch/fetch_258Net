@@ -1,0 +1,118 @@
+2017-11-07 15:59:18 [scrapy] INFO: Scrapy 1.3.3 started (bot: Fetch_258Net)
+2017-11-07 15:59:18 [scrapy] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'Fetch_258Net.spiders', 'ROBOTSTXT_OBEY': True, 'LOG_LEVEL': 'INFO', 'CONCURRENT_REQUESTS': 32, 'SPIDER_MODULES': ['Fetch_258Net.spiders'], 'BOT_NAME': 'Fetch_258Net', 'DOWNLOAD_TIMEOUT': 30, 'USER_AGENT': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36', 'LOG_FILE': 'logs/spider.log', 'DOWNLOAD_DELAY': 0.2}
+2017-11-07 15:59:18 [py.warnings] WARNING: /app/fetch_258net/Fetch_258Net/Fetch_258Net/extensions/AutoThrottleWithList.py:3: ScrapyDeprecationWarning: Module `scrapy.contrib.throttle` is deprecated, use `scrapy.extensions.throttle` instead
+  from scrapy.contrib.throttle import AutoThrottle
+
+2017-11-07 15:59:18 [scrapy] INFO: Enabled extensions:
+['scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2017-11-07 15:59:18 [scrapy] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2017-11-07 15:59:18 [scrapy] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2017-11-07 15:59:18 [scrapy] INFO: Enabled item pipelines:
+['Fetch_258Net.pipelines.Fetch258NetPipeline']
+2017-11-07 15:59:18 [scrapy] INFO: Spider opened
+2017-11-07 15:59:18 [scrapy] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-11-07 15:59:18 [258net] INFO: fetch new url=http://628298.shop.258.com
+2017-11-07 15:59:18 [258net] INFO: fetch new url=http://627365.shop.258.com
+2017-11-07 15:59:18 [258net] INFO: fetch new url=http://593325.shop.258.com
+2017-11-07 15:59:18 [258net] INFO: fetch new url=http://jiang1233.shop.258.com
+2017-11-07 15:59:18 [258net] INFO: fetch new url=http://619515.shop.258.com
+2017-11-07 15:59:18 [258net] INFO: fetch new url=http://609452.shop.258.com
+2017-11-07 15:59:18 [258net] INFO: fetch new url=http://615965.shop.258.com
+2017-11-07 15:59:18 [258net] INFO: fetch new url=http://615883.shop.258.com
+2017-11-07 15:59:18 [258net] INFO: fetch new url=http://614682.shop.258.com
+2017-11-07 15:59:18 [258net] INFO: fetch new url=http://612516.shop.258.com
+2017-11-07 15:59:18 [258net] INFO: fetch new url=http://603195.shop.258.com
+2017-11-07 15:59:18 [258net] INFO: fetch new url=http://610959.shop.258.com
+2017-11-07 15:59:18 [258net] INFO: fetch new url=http://609720.shop.258.com
+2017-11-07 15:59:18 [258net] INFO: fetch new url=http://609499.shop.258.com
+2017-11-07 15:59:18 [258net] INFO: fetch new url=http://606232.shop.258.com
+2017-11-07 15:59:18 [258net] INFO: fetch new url=http://605863.shop.258.com
+2017-11-07 15:59:18 [258net] INFO: fetch new url=http://605226.shop.258.com
+2017-11-07 15:59:18 [258net] INFO: fetch new url=http://601310.shop.258.com
+2017-11-07 15:59:18 [258net] INFO: fetch new url=http://tengxianghb.shop.258.com
+2017-11-07 15:59:18 [258net] INFO: fetch new url=http://599185.shop.258.com
+2017-11-07 15:59:18 [258net] INFO: fetch new url=http://625324.shop.258.com
+2017-11-07 15:59:18 [258net] INFO: fetch new url=http://626977.shop.258.com
+2017-11-07 15:59:18 [258net] INFO: fetch new url=http://626039.shop.258.com
+2017-11-07 15:59:18 [258net] INFO: fetch new url=http://625444.shop.258.com
+2017-11-07 15:59:18 [258net] INFO: fetch new url=http://saier.shop.258.com
+2017-11-07 15:59:18 [258net] INFO: fetch new url=http://bjmklp2014.shop.258.com
+2017-11-07 15:59:18 [258net] INFO: fetch new url=http://624106.shop.258.com
+2017-11-07 15:59:18 [258net] INFO: fetch new url=http://623228.shop.258.com
+2017-11-07 15:59:18 [258net] INFO: fetch new url=http://592950.shop.258.com
+2017-11-07 15:59:18 [258net] INFO: fetch new url=http://621568.shop.258.com
+2017-11-07 15:59:18 [258net] INFO: fetch new url=http://620645.shop.258.com
+2017-11-07 15:59:18 [258net] INFO: fetch new url=http://620459.shop.258.com
+2017-11-07 15:59:18 [258net] INFO: fetch new url=http://607025.shop.258.com
+2017-11-07 15:59:18 [258net] INFO: fetch new url=http://xmjslzdhsbyxgs240.shop.258.com
+2017-11-07 15:59:18 [258net] INFO: fetch new url=http://602378.shop.258.com
+2017-11-07 15:59:18 [258net] INFO: fetch new url=http://611247.shop.258.com
+2017-11-07 15:59:19 [258net] INFO:  . company_name:成都魔站产品代理商, url=http://603195.shop.258.com, contactor:沈亚涛, QQ:570562836, tp:0592-5201314, mp:15060731755, add:福建省厦门市思明区观音山运营, syb: , sm: 
+2017-11-07 15:59:19 [258net] INFO: fetch new url=http://605977.shop.258.com
+2017-11-07 15:59:19 [258net] INFO:  . company_name:扬州舜力帮汽车零部件有限公司, url=http://628298.shop.258.com, contactor:张立, QQ:1475155776, tp:0514-83420606, mp:15150899089, add:江苏省扬州市仪征市胥浦工业集中区天恒路17号, syb:1, sm: 
+2017-11-07 15:59:19 [258net] INFO: fetch new url=http://xmfxezdhsbyxgs4632.shop.258.com
+2017-11-07 15:59:19 [258net] INFO:  . company_name:深圳市新昌盛标牌有限公司, url=http://614682.shop.258.com, contactor:张佳, QQ:435555922, tp:181-87199996, mp:18187199996, add:广东省深圳市宝安区沙井街道共和大道29号共和工业, syb: , sm: 
+2017-11-07 15:59:19 [258net] INFO:  . company_name:拓荒牛智能切割科技股份有限公司, url=http://615883.shop.258.com, contactor:田生, QQ:2297415669, tp:0769-18380335-540, mp:18380335540, add:四川省成都市成华区阳光100, syb: , sm: 
+2017-11-07 15:59:19 [258net] INFO:  . company_name:郑州国企鸿运机械有限公司, url=http://609720.shop.258.com, contactor:马先生, QQ:200833006, tp:0371-66668888, mp:15036138005, add:河南省郑州市巩义市新兴路26号, syb: , sm: 
+2017-11-07 15:59:19 [258net] INFO:  . company_name:厦门的专科今晚, url=http://606232.shop.258.com, contactor:密码, QQ:3146655, tp:22-54345-64646464, mp:13451234666, add:贵州省毕节市订购破, syb: , sm: 
+2017-11-07 15:59:19 [258net] INFO:  . company_name:保定月浩汽车用品制造有限公司, url=http://627365.shop.258.com, contactor:任恩勇, QQ:772018483, tp:0312-2892166, mp:13522329471, add:高碑店市河北省保定市白沟新城镇果园工业园, syb: , sm: 
+2017-11-07 15:59:19 [258net] INFO: fetch new url=http://njkjtcgkjyxgs0586.shop.258.com
+2017-11-07 15:59:19 [258net] INFO: fetch new url=http://xmhlddzyxgs2584.shop.258.com
+2017-11-07 15:59:19 [258net] INFO:  . company_name:淮北车互联科技有限公司, url=http://599185.shop.258.com, contactor:王珂, QQ:1808885586, tp:0561-15678987, mp:15678987784, add:安徽省淮北市相山区, syb: , sm: 
+2017-11-07 15:59:19 [258net] INFO:  . company_name:内蒙古好易发广告传媒有限公司, url=http://605226.shop.258.com, contactor:好易发, QQ:3445327629, tp:0474-3678767, mp:13694731743, add:内蒙古自治区乌兰察布市集宁区, syb: , sm: 
+2017-11-07 15:59:19 [258net] INFO:  . company_name:修水县视诺尔汽车附件中心, url=http://612516.shop.258.com, contactor:卢峰, QQ:2632052353, tp:0792-7828800, mp:18579206118, add:江西省九江市修水县东盟佳苑5栋101-3, syb: , sm: 
+2017-11-07 15:59:19 [258net] INFO:  . company_name:前海方铎科技深圳有限公司, url=http://615965.shop.258.com, contactor:陈端屏, QQ:3575901958, tp:0755-27218030, mp:15919823282, add:广东省深圳市宝安区中国深圳宝安西乡固戍沙边海滨工业区一区二巷2号4楼,, syb: , sm: 
+2017-11-07 15:59:19 [258net] INFO:  . company_name:苏州正科金属制品有限公司, url=http://601310.shop.258.com, contactor:殷海洋, QQ:734359905, tp:86-0512-66294992, mp:15995719938, add:江苏省苏州市吴中区临湖镇浦庄和安路1189号, syb: , sm: 
+2017-11-07 15:59:19 [258net] INFO: fetch new url=http://627486.shop.258.com
+2017-11-07 15:59:19 [258net] INFO: fetch new url=http://628832.shop.258.com
+2017-11-07 15:59:19 [258net] INFO: fetch new url=http://wvjing.shop.258.com
+2017-11-07 15:59:19 [258net] INFO: fetch new url=http://623557.shop.258.com
+2017-11-07 15:59:19 [258net] INFO: fetch new url=http://wxjzdhkjyxgs336.shop.258.com
+2017-11-07 15:59:19 [258net] INFO:  . company_name:北京麦克罗普电子有限公司, url=http://bjmklp2014.shop.258.com, contactor:吕经理, QQ:179992337, tp:010-63753158-811, mp:13021260748, add:北京市市辖区丰台区科学城百强大道六号院6号楼（宝隆公寓2号楼）409-410房间, syb: , sm: 
+2017-11-07 15:59:19 [258net] INFO: fetch new url=http://zzxddqsbyxgs744.shop.258.com
+2017-11-07 15:59:19 [258net] INFO: fetch new url=http://dsrsfjdyxgs2347.shop.258.com
+2017-11-07 15:59:19 [258net] INFO: fetch new url=http://sshyjnjsyxgs6730.shop.258.com
+2017-11-07 15:59:19 [258net] INFO:  . company_name:无锡布里渊电子科技有限公司, url=http://626039.shop.258.com, contactor:潘先生, QQ:418823803, tp:0510-68773577, mp:15345109120, add:江苏省无锡市滨湖区高浪东路999号, syb: , sm: 
+2017-11-07 15:59:19 [258net] INFO:  . company_name:淄博腾翔环保科技有限公司, url=http://tengxianghb.shop.258.com, contactor:刘程程, QQ:1424737053, tp:86-0533-2315444, mp:13864435444, add:山东省淄博市张店区沣水镇, syb: , sm:1
+2017-11-07 15:59:19 [258net] INFO: fetch new url=http://zbjxdqsbyxgs910.shop.258.com
+2017-11-07 15:59:19 [258net] INFO: fetch new url=http://zqsdzqyydzjxjyb4993.shop.258.com
+2017-11-07 15:59:19 [258net] INFO:  . company_name:北京盛世宏博科技有限公司, url=http://626977.shop.258.com, contactor:何亮, QQ:410289685, tp:86-010-57737363, mp:15313657472, add:北京市市辖区昌平区, syb: , sm: 
+2017-11-07 15:59:19 [258net] INFO:  . company_name:上海倍吉电子科技有限公司, url=http://625444.shop.258.com, contactor:陈瑞, QQ:935973641, tp:021-50116667, mp:13003155375, add:上海市市辖区嘉定区德富路1211号, syb: , sm:1
+2017-11-07 15:59:19 [258net] INFO:  . company_name:朗斯测试技术（秦皇岛北戴河）有限公司, url=http://625324.shop.258.com, contactor:刘经理, QQ:1905198952, tp:86-0335-4037380, mp:13803355293, add:河北省北戴河区秦皇岛市北二路草厂新村, syb: , sm: 
+2017-11-07 15:59:19 [258net] INFO: fetch new url=http://hbdl.shop.258.com
+2017-11-07 15:59:19 [258net] INFO:  . company_name:深圳市美都科技有限公司, url=http://609452.shop.258.com, contactor:黄小姐, QQ:2045426152, tp:0755-88853231, mp:18002505529, add:广东省深圳市宝安区, syb: , sm: 
+2017-11-07 15:59:20 [258net] INFO: fetch new url=http://612741.shop.258.com
+2017-11-07 15:59:20 [258net] INFO:  . company_name:杭州轮数信息科技有限公司, url=http://593325.shop.258.com, contactor:黄工, QQ:151356092, tp:86-0571-88960711, mp:15868125299, add:浙江省杭州市西湖区西湖科技园, syb: , sm: 
+2017-11-07 15:59:20 [258net] INFO:  . company_name:佛山市顺德区赛盛尔电子科技有限公司, url=http://saier.shop.258.com, contactor:黄景丽, QQ:2850235881, tp:0757-26113775, mp:13433229799, add:广东省佛山市顺德区容桂镇容港路33号4楼, syb: , sm:1
+2017-11-07 15:59:20 [258net] INFO:  . company_name:泊头市广源汽车用品厂, url=http://610959.shop.258.com, contactor:杨晓霞, QQ:3224120003, tp:0317-8047805, mp:13933080370, add:河北省沧州市泊头市, syb: , sm: 
+2017-11-07 15:59:20 [258net] INFO: fetch new url=http://609510.shop.258.com
+2017-11-07 15:59:20 [258net] INFO: fetch new url=http://611270.shop.258.com
+2017-11-07 15:59:20 [258net] INFO: fetch new url=http://600896.shop.258.com
+2017-11-07 15:59:20 [258net] INFO:  . company_name:厦门梅子科技技术公司, url=http://605863.shop.258.com, contactor:梅梅, QQ:34626449, tp:12-225-25554622, mp:13455667777, add:山东省菏泽市嘻嘻移民, syb: , sm: 
+2017-11-07 15:59:20 [258net] INFO: fetch new url=http://607508.shop.258.com
+2017-11-07 15:59:20 [258net] INFO: fetch new url=http://609442.shop.258.com
+2017-11-07 15:59:20 [258net] INFO: fetch new url=http://607357.shop.258.com
+2017-11-07 15:59:20 [258net] INFO: fetch new url=http://605320.shop.258.com
+2017-11-07 15:59:20 [scrapy] INFO: Received SIGINT, shutting down gracefully. Send again to force 
+2017-11-07 15:59:20 [scrapy] INFO: Closing spider (shutdown)
+2017-11-07 15:59:20 [258net] INFO:  . company_name:杭州永恒科技有限公司, url=http://609499.shop.258.com, contactor:杭州, QQ:81892204, tp:0755-48913651, mp:17082164260, add:江苏省南京市江宁区, syb: , sm: 
+2017-11-07 15:59:20 [258net] INFO:  . company_name:深圳市百通达汽车服务有限公司, url=http://619515.shop.258.com, contactor:莫小姐, QQ:1550823973, tp:0755-32843496, mp:13714566649, add:广东省深圳市宝安区, syb: , sm: 
+2017-11-07 15:59:20 [scrapy] INFO: Received SIGINT twice, forcing unclean shutdown

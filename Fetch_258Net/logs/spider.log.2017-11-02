@@ -1,0 +1,815 @@
+2017-11-02 15:03:54 [scrapy] INFO: Scrapy 1.3.3 started (bot: Fetch_258Net)
+2017-11-02 15:03:54 [scrapy] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'Fetch_258Net.spiders', 'ROBOTSTXT_OBEY': True, 'LOG_LEVEL': 'INFO', 'CONCURRENT_REQUESTS': 32, 'SPIDER_MODULES': ['Fetch_258Net.spiders'], 'BOT_NAME': 'Fetch_258Net', 'DOWNLOAD_TIMEOUT': 3, 'USER_AGENT': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36', 'LOG_FILE': 'logs/spider.log', 'DOWNLOAD_DELAY': 3}
+2017-11-02 15:04:11 [scrapy] INFO: Scrapy 1.3.3 started (bot: Fetch_258Net)
+2017-11-02 15:04:11 [scrapy] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'Fetch_258Net.spiders', 'ROBOTSTXT_OBEY': True, 'LOG_LEVEL': 'INFO', 'CONCURRENT_REQUESTS': 32, 'SPIDER_MODULES': ['Fetch_258Net.spiders'], 'BOT_NAME': 'Fetch_258Net', 'DOWNLOAD_TIMEOUT': 3, 'USER_AGENT': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36', 'LOG_FILE': 'logs/spider.log', 'DOWNLOAD_DELAY': 3}
+2017-11-02 15:04:57 [scrapy] INFO: Scrapy 1.3.3 started (bot: Fetch_258Net)
+2017-11-02 15:04:57 [scrapy] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'Fetch_258Net.spiders', 'ROBOTSTXT_OBEY': True, 'LOG_LEVEL': 'INFO', 'CONCURRENT_REQUESTS': 32, 'SPIDER_MODULES': ['Fetch_258Net.spiders'], 'BOT_NAME': 'Fetch_258Net', 'DOWNLOAD_TIMEOUT': 3, 'USER_AGENT': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36', 'LOG_FILE': 'logs/spider.log', 'DOWNLOAD_DELAY': 3}
+2017-11-02 15:04:57 [py.warnings] WARNING: /working/kangchaochao/leads/fetch_258net/Fetch_258Net/Fetch_258Net/extensions/AutoThrottleWithList.py:3: ScrapyDeprecationWarning: Module `scrapy.contrib.throttle` is deprecated, use `scrapy.extensions.throttle` instead
+  from scrapy.contrib.throttle import AutoThrottle
+
+2017-11-02 15:04:57 [scrapy] INFO: Enabled extensions:
+['scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2017-11-02 15:04:58 [scrapy] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2017-11-02 15:04:58 [scrapy] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2017-11-02 15:04:58 [scrapy] INFO: Enabled item pipelines:
+['Fetch_258Net.pipelines.Fetch258NetPipeline']
+2017-11-02 15:04:58 [scrapy] INFO: Spider opened
+2017-11-02 15:04:58 [scrapy] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-11-02 15:04:58 [258net] INFO: fetch new url=http://627365.shop.258.com
+2017-11-02 15:05:08 [scrapy] ERROR: Error downloading <GET http://627365.shop.258.com/contact/>
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 1126, in _inlineCallbacks
+    result = result.throwExceptionIntoGenerator(g)
+  File "/usr/local/lib/python2.7/site-packages/twisted/python/failure.py", line 389, in throwExceptionIntoGenerator
+    return g.throw(self.type, self.value, self.tb)
+  File "/usr/local/lib/python2.7/site-packages/scrapy/core/downloader/middleware.py", line 43, in process_request
+    defer.returnValue((yield download_func(request=request,spider=spider)))
+  File "/usr/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/usr/local/lib/python2.7/site-packages/scrapy/core/downloader/handlers/http11.py", line 306, in _cb_timeout
+    raise TimeoutError("Getting %s took longer than %s seconds." % (url, timeout))
+TimeoutError: User timeout caused connection failure: Getting http://627365.shop.258.com/contact/ took longer than 3.0 seconds..
+2017-11-02 15:05:08 [scrapy] INFO: Closing spider (finished)
+2017-11-02 15:05:08 [scrapy] INFO: Dumping Scrapy stats:
+{'downloader/exception_count': 1,
+ 'downloader/exception_type_count/twisted.internet.error.TimeoutError': 1,
+ 'downloader/request_bytes': 980,
+ 'downloader/request_count': 3,
+ 'downloader/request_method_count/GET': 3,
+ 'downloader/response_bytes': 16258,
+ 'downloader/response_count': 2,
+ 'downloader/response_status_count/200': 2,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2017, 11, 2, 7, 5, 8, 316282),
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 8,
+ 'log_count/WARNING': 1,
+ 'request_depth_max': 1,
+ 'response_received_count': 2,
+ 'scheduler/dequeued': 2,
+ 'scheduler/dequeued/memory': 2,
+ 'scheduler/enqueued': 2,
+ 'scheduler/enqueued/memory': 2,
+ 'start_time': datetime.datetime(2017, 11, 2, 7, 4, 58, 87112)}
+2017-11-02 15:05:08 [scrapy] INFO: Spider closed (finished)
+2017-11-02 15:08:40 [scrapy] INFO: Scrapy 1.3.3 started (bot: Fetch_258Net)
+2017-11-02 15:08:40 [scrapy] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'Fetch_258Net.spiders', 'ROBOTSTXT_OBEY': True, 'LOG_LEVEL': 'INFO', 'CONCURRENT_REQUESTS': 32, 'SPIDER_MODULES': ['Fetch_258Net.spiders'], 'BOT_NAME': 'Fetch_258Net', 'DOWNLOAD_TIMEOUT': 3, 'USER_AGENT': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36', 'LOG_FILE': 'logs/spider.log', 'DOWNLOAD_DELAY': 3}
+2017-11-02 15:08:41 [py.warnings] WARNING: /working/kangchaochao/leads/fetch_258net/Fetch_258Net/Fetch_258Net/extensions/AutoThrottleWithList.py:3: ScrapyDeprecationWarning: Module `scrapy.contrib.throttle` is deprecated, use `scrapy.extensions.throttle` instead
+  from scrapy.contrib.throttle import AutoThrottle
+
+2017-11-02 15:08:41 [scrapy] INFO: Enabled extensions:
+['scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2017-11-02 15:08:41 [scrapy] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2017-11-02 15:08:41 [scrapy] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2017-11-02 15:08:41 [scrapy] INFO: Enabled item pipelines:
+['Fetch_258Net.pipelines.Fetch258NetPipeline']
+2017-11-02 15:08:41 [scrapy] INFO: Spider opened
+2017-11-02 15:08:41 [scrapy] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-11-02 15:08:41 [258net] INFO: fetch new url=http://627365.shop.258.com
+2017-11-02 15:08:51 [scrapy] ERROR: Error downloading <GET http://627365.shop.258.com/contact>
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 1126, in _inlineCallbacks
+    result = result.throwExceptionIntoGenerator(g)
+  File "/usr/local/lib/python2.7/site-packages/twisted/python/failure.py", line 389, in throwExceptionIntoGenerator
+    return g.throw(self.type, self.value, self.tb)
+  File "/usr/local/lib/python2.7/site-packages/scrapy/core/downloader/middleware.py", line 43, in process_request
+    defer.returnValue((yield download_func(request=request,spider=spider)))
+  File "/usr/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/usr/local/lib/python2.7/site-packages/scrapy/core/downloader/handlers/http11.py", line 306, in _cb_timeout
+    raise TimeoutError("Getting %s took longer than %s seconds." % (url, timeout))
+TimeoutError: User timeout caused connection failure: Getting http://627365.shop.258.com/contact took longer than 3.0 seconds..
+2017-11-02 15:08:51 [scrapy] INFO: Closing spider (finished)
+2017-11-02 15:08:51 [scrapy] INFO: Dumping Scrapy stats:
+{'downloader/exception_count': 1,
+ 'downloader/exception_type_count/twisted.internet.error.TimeoutError': 1,
+ 'downloader/request_bytes': 979,
+ 'downloader/request_count': 3,
+ 'downloader/request_method_count/GET': 3,
+ 'downloader/response_bytes': 16258,
+ 'downloader/response_count': 2,
+ 'downloader/response_status_count/200': 2,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2017, 11, 2, 7, 8, 51, 371309),
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 8,
+ 'log_count/WARNING': 1,
+ 'request_depth_max': 1,
+ 'response_received_count': 2,
+ 'scheduler/dequeued': 2,
+ 'scheduler/dequeued/memory': 2,
+ 'scheduler/enqueued': 2,
+ 'scheduler/enqueued/memory': 2,
+ 'start_time': datetime.datetime(2017, 11, 2, 7, 8, 41, 184162)}
+2017-11-02 15:08:51 [scrapy] INFO: Spider closed (finished)
+2017-11-02 15:08:57 [scrapy] INFO: Scrapy 1.3.3 started (bot: Fetch_258Net)
+2017-11-02 15:08:57 [scrapy] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'Fetch_258Net.spiders', 'ROBOTSTXT_OBEY': True, 'LOG_LEVEL': 'INFO', 'CONCURRENT_REQUESTS': 32, 'SPIDER_MODULES': ['Fetch_258Net.spiders'], 'BOT_NAME': 'Fetch_258Net', 'DOWNLOAD_TIMEOUT': 3, 'USER_AGENT': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36', 'LOG_FILE': 'logs/spider.log', 'DOWNLOAD_DELAY': 3}
+2017-11-02 15:08:57 [py.warnings] WARNING: /working/kangchaochao/leads/fetch_258net/Fetch_258Net/Fetch_258Net/extensions/AutoThrottleWithList.py:3: ScrapyDeprecationWarning: Module `scrapy.contrib.throttle` is deprecated, use `scrapy.extensions.throttle` instead
+  from scrapy.contrib.throttle import AutoThrottle
+
+2017-11-02 15:08:57 [scrapy] INFO: Enabled extensions:
+['scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2017-11-02 15:08:57 [scrapy] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2017-11-02 15:08:57 [scrapy] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2017-11-02 15:08:57 [scrapy] INFO: Enabled item pipelines:
+['Fetch_258Net.pipelines.Fetch258NetPipeline']
+2017-11-02 15:08:57 [scrapy] INFO: Spider opened
+2017-11-02 15:08:57 [scrapy] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-11-02 15:08:57 [258net] INFO: fetch new url=http://627365.shop.258.com
+2017-11-02 15:09:08 [scrapy] ERROR: Error downloading <GET http://627365.shop.258.com>
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 1126, in _inlineCallbacks
+    result = result.throwExceptionIntoGenerator(g)
+  File "/usr/local/lib/python2.7/site-packages/twisted/python/failure.py", line 389, in throwExceptionIntoGenerator
+    return g.throw(self.type, self.value, self.tb)
+  File "/usr/local/lib/python2.7/site-packages/scrapy/core/downloader/middleware.py", line 43, in process_request
+    defer.returnValue((yield download_func(request=request,spider=spider)))
+  File "/usr/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/usr/local/lib/python2.7/site-packages/scrapy/core/downloader/handlers/http11.py", line 306, in _cb_timeout
+    raise TimeoutError("Getting %s took longer than %s seconds." % (url, timeout))
+TimeoutError: User timeout caused connection failure: Getting http://627365.shop.258.com took longer than 3.0 seconds..
+2017-11-02 15:09:09 [scrapy] INFO: Closing spider (finished)
+2017-11-02 15:09:09 [scrapy] INFO: Dumping Scrapy stats:
+{'downloader/exception_count': 2,
+ 'downloader/exception_type_count/twisted.internet.error.TimeoutError': 2,
+ 'downloader/request_bytes': 899,
+ 'downloader/request_count': 3,
+ 'downloader/request_method_count/GET': 3,
+ 'downloader/response_bytes': 226,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2017, 11, 2, 7, 9, 9, 25013),
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 8,
+ 'log_count/WARNING': 1,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2017, 11, 2, 7, 8, 57, 885045)}
+2017-11-02 15:09:09 [scrapy] INFO: Spider closed (finished)
+2017-11-02 15:09:19 [scrapy] INFO: Scrapy 1.3.3 started (bot: Fetch_258Net)
+2017-11-02 15:09:19 [scrapy] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'Fetch_258Net.spiders', 'ROBOTSTXT_OBEY': True, 'LOG_LEVEL': 'INFO', 'CONCURRENT_REQUESTS': 32, 'SPIDER_MODULES': ['Fetch_258Net.spiders'], 'BOT_NAME': 'Fetch_258Net', 'DOWNLOAD_TIMEOUT': 3, 'USER_AGENT': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36', 'LOG_FILE': 'logs/spider.log', 'DOWNLOAD_DELAY': 3}
+2017-11-02 15:09:20 [py.warnings] WARNING: /working/kangchaochao/leads/fetch_258net/Fetch_258Net/Fetch_258Net/extensions/AutoThrottleWithList.py:3: ScrapyDeprecationWarning: Module `scrapy.contrib.throttle` is deprecated, use `scrapy.extensions.throttle` instead
+  from scrapy.contrib.throttle import AutoThrottle
+
+2017-11-02 15:09:20 [scrapy] INFO: Enabled extensions:
+['scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2017-11-02 15:09:20 [scrapy] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2017-11-02 15:09:20 [scrapy] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2017-11-02 15:09:20 [scrapy] INFO: Enabled item pipelines:
+['Fetch_258Net.pipelines.Fetch258NetPipeline']
+2017-11-02 15:09:20 [scrapy] INFO: Spider opened
+2017-11-02 15:09:20 [scrapy] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-11-02 15:09:20 [258net] INFO: fetch new url=http://627365.shop.258.com
+2017-11-02 15:09:35 [scrapy] ERROR: Error downloading <GET http://627365.shop.258.com/contact>
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 1126, in _inlineCallbacks
+    result = result.throwExceptionIntoGenerator(g)
+  File "/usr/local/lib/python2.7/site-packages/twisted/python/failure.py", line 389, in throwExceptionIntoGenerator
+    return g.throw(self.type, self.value, self.tb)
+  File "/usr/local/lib/python2.7/site-packages/scrapy/core/downloader/middleware.py", line 43, in process_request
+    defer.returnValue((yield download_func(request=request,spider=spider)))
+  File "/usr/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/usr/local/lib/python2.7/site-packages/scrapy/core/downloader/handlers/http11.py", line 306, in _cb_timeout
+    raise TimeoutError("Getting %s took longer than %s seconds." % (url, timeout))
+TimeoutError: User timeout caused connection failure: Getting http://627365.shop.258.com/contact took longer than 3.0 seconds..
+2017-11-02 15:09:35 [scrapy] INFO: Closing spider (finished)
+2017-11-02 15:09:35 [scrapy] INFO: Dumping Scrapy stats:
+{'downloader/exception_count': 2,
+ 'downloader/exception_type_count/twisted.internet.error.TimeoutError': 2,
+ 'downloader/request_bytes': 1282,
+ 'downloader/request_count': 4,
+ 'downloader/request_method_count/GET': 4,
+ 'downloader/response_bytes': 16258,
+ 'downloader/response_count': 2,
+ 'downloader/response_status_count/200': 2,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2017, 11, 2, 7, 9, 35, 802912),
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 8,
+ 'log_count/WARNING': 1,
+ 'request_depth_max': 1,
+ 'response_received_count': 2,
+ 'scheduler/dequeued': 2,
+ 'scheduler/dequeued/memory': 2,
+ 'scheduler/enqueued': 2,
+ 'scheduler/enqueued/memory': 2,
+ 'start_time': datetime.datetime(2017, 11, 2, 7, 9, 20, 418590)}
+2017-11-02 15:09:35 [scrapy] INFO: Spider closed (finished)
+2017-11-02 15:26:15 [scrapy] INFO: Scrapy 1.3.3 started (bot: Fetch_258Net)
+2017-11-02 15:26:15 [scrapy] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'Fetch_258Net.spiders', 'ROBOTSTXT_OBEY': True, 'LOG_LEVEL': 'INFO', 'CONCURRENT_REQUESTS': 32, 'SPIDER_MODULES': ['Fetch_258Net.spiders'], 'BOT_NAME': 'Fetch_258Net', 'DOWNLOAD_TIMEOUT': 3, 'USER_AGENT': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36', 'LOG_FILE': 'logs/spider.log', 'DOWNLOAD_DELAY': 3}
+2017-11-02 15:26:15 [py.warnings] WARNING: /working/kangchaochao/leads/fetch_258net/Fetch_258Net/Fetch_258Net/extensions/AutoThrottleWithList.py:3: ScrapyDeprecationWarning: Module `scrapy.contrib.throttle` is deprecated, use `scrapy.extensions.throttle` instead
+  from scrapy.contrib.throttle import AutoThrottle
+
+2017-11-02 15:26:15 [scrapy] INFO: Enabled extensions:
+['scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2017-11-02 15:26:15 [scrapy] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2017-11-02 15:26:15 [scrapy] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2017-11-02 15:26:15 [scrapy] INFO: Enabled item pipelines:
+['Fetch_258Net.pipelines.Fetch258NetPipeline']
+2017-11-02 15:26:15 [scrapy] INFO: Spider opened
+2017-11-02 15:26:15 [scrapy] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-11-02 15:26:15 [258net] INFO: fetch new url=http://627365.shop.258.com
+2017-11-02 15:26:22 [scrapy] ERROR: Error downloading <GET http://627365.shop.258.com>
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 1126, in _inlineCallbacks
+    result = result.throwExceptionIntoGenerator(g)
+  File "/usr/local/lib/python2.7/site-packages/twisted/python/failure.py", line 389, in throwExceptionIntoGenerator
+    return g.throw(self.type, self.value, self.tb)
+  File "/usr/local/lib/python2.7/site-packages/scrapy/core/downloader/middleware.py", line 43, in process_request
+    defer.returnValue((yield download_func(request=request,spider=spider)))
+  File "/usr/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/usr/local/lib/python2.7/site-packages/scrapy/core/downloader/handlers/http11.py", line 306, in _cb_timeout
+    raise TimeoutError("Getting %s took longer than %s seconds." % (url, timeout))
+TimeoutError: User timeout caused connection failure: Getting http://627365.shop.258.com took longer than 3.0 seconds..
+2017-11-02 15:26:22 [scrapy] INFO: Closing spider (finished)
+2017-11-02 15:26:22 [scrapy] INFO: Dumping Scrapy stats:
+{'downloader/exception_count': 1,
+ 'downloader/exception_type_count/twisted.internet.error.TimeoutError': 1,
+ 'downloader/request_bytes': 596,
+ 'downloader/request_count': 2,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/response_bytes': 226,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2017, 11, 2, 7, 26, 22, 861218),
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 8,
+ 'log_count/WARNING': 1,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2017, 11, 2, 7, 26, 15, 476475)}
+2017-11-02 15:26:22 [scrapy] INFO: Spider closed (finished)
+2017-11-02 15:30:40 [scrapy] INFO: Scrapy 1.3.3 started (bot: Fetch_258Net)
+2017-11-02 15:30:40 [scrapy] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'Fetch_258Net.spiders', 'ROBOTSTXT_OBEY': True, 'LOG_LEVEL': 'INFO', 'CONCURRENT_REQUESTS': 32, 'SPIDER_MODULES': ['Fetch_258Net.spiders'], 'BOT_NAME': 'Fetch_258Net', 'DOWNLOAD_TIMEOUT': 3, 'USER_AGENT': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36', 'LOG_FILE': 'logs/spider.log', 'DOWNLOAD_DELAY': 3}
+2017-11-02 15:30:41 [py.warnings] WARNING: /working/kangchaochao/leads/fetch_258net/Fetch_258Net/Fetch_258Net/extensions/AutoThrottleWithList.py:3: ScrapyDeprecationWarning: Module `scrapy.contrib.throttle` is deprecated, use `scrapy.extensions.throttle` instead
+  from scrapy.contrib.throttle import AutoThrottle
+
+2017-11-02 15:30:41 [scrapy] INFO: Enabled extensions:
+['scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2017-11-02 15:30:41 [scrapy] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2017-11-02 15:30:41 [scrapy] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2017-11-02 15:30:41 [scrapy] INFO: Enabled item pipelines:
+['Fetch_258Net.pipelines.Fetch258NetPipeline']
+2017-11-02 15:30:41 [scrapy] INFO: Spider opened
+2017-11-02 15:30:41 [scrapy] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-11-02 15:30:41 [258net] INFO: fetch new url=http://627365.shop.258.com
+2017-11-02 15:30:47 [scrapy] ERROR: Error downloading <GET http://627365.shop.258.com>
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 1126, in _inlineCallbacks
+    result = result.throwExceptionIntoGenerator(g)
+  File "/usr/local/lib/python2.7/site-packages/twisted/python/failure.py", line 389, in throwExceptionIntoGenerator
+    return g.throw(self.type, self.value, self.tb)
+  File "/usr/local/lib/python2.7/site-packages/scrapy/core/downloader/middleware.py", line 43, in process_request
+    defer.returnValue((yield download_func(request=request,spider=spider)))
+  File "/usr/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/usr/local/lib/python2.7/site-packages/scrapy/core/downloader/handlers/http11.py", line 306, in _cb_timeout
+    raise TimeoutError("Getting %s took longer than %s seconds." % (url, timeout))
+TimeoutError: User timeout caused connection failure: Getting http://627365.shop.258.com took longer than 3.0 seconds..
+2017-11-02 15:30:47 [scrapy] INFO: Closing spider (finished)
+2017-11-02 15:30:47 [scrapy] INFO: Dumping Scrapy stats:
+{'downloader/exception_count': 1,
+ 'downloader/exception_type_count/twisted.internet.error.TimeoutError': 1,
+ 'downloader/request_bytes': 596,
+ 'downloader/request_count': 2,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/response_bytes': 226,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2017, 11, 2, 7, 30, 47, 742000),
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 8,
+ 'log_count/WARNING': 1,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2017, 11, 2, 7, 30, 41, 125482)}
+2017-11-02 15:30:47 [scrapy] INFO: Spider closed (finished)
+2017-11-02 15:32:40 [scrapy] INFO: Scrapy 1.3.3 started (bot: Fetch_258Net)
+2017-11-02 15:32:40 [scrapy] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'Fetch_258Net.spiders', 'ROBOTSTXT_OBEY': True, 'LOG_LEVEL': 'INFO', 'CONCURRENT_REQUESTS': 32, 'SPIDER_MODULES': ['Fetch_258Net.spiders'], 'BOT_NAME': 'Fetch_258Net', 'USER_AGENT': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36', 'LOG_FILE': 'logs/spider.log', 'DOWNLOAD_DELAY': 3}
+2017-11-02 15:32:40 [py.warnings] WARNING: /working/kangchaochao/leads/fetch_258net/Fetch_258Net/Fetch_258Net/extensions/AutoThrottleWithList.py:3: ScrapyDeprecationWarning: Module `scrapy.contrib.throttle` is deprecated, use `scrapy.extensions.throttle` instead
+  from scrapy.contrib.throttle import AutoThrottle
+
+2017-11-02 15:32:40 [scrapy] INFO: Enabled extensions:
+['scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2017-11-02 15:32:40 [twisted] CRITICAL: Unhandled error in Deferred:
+2017-11-02 15:32:40 [twisted] CRITICAL: 
+2017-11-02 15:32:59 [scrapy] INFO: Scrapy 1.3.3 started (bot: Fetch_258Net)
+2017-11-02 15:32:59 [scrapy] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'Fetch_258Net.spiders', 'ROBOTSTXT_OBEY': True, 'LOG_LEVEL': 'INFO', 'CONCURRENT_REQUESTS': 32, 'SPIDER_MODULES': ['Fetch_258Net.spiders'], 'BOT_NAME': 'Fetch_258Net', 'USER_AGENT': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36', 'LOG_FILE': 'logs/spider.log', 'DOWNLOAD_DELAY': 3}
+2017-11-02 15:33:00 [py.warnings] WARNING: /working/kangchaochao/leads/fetch_258net/Fetch_258Net/Fetch_258Net/extensions/AutoThrottleWithList.py:3: ScrapyDeprecationWarning: Module `scrapy.contrib.throttle` is deprecated, use `scrapy.extensions.throttle` instead
+  from scrapy.contrib.throttle import AutoThrottle
+
+2017-11-02 15:33:00 [scrapy] INFO: Enabled extensions:
+['scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2017-11-02 15:33:00 [scrapy] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2017-11-02 15:33:00 [scrapy] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2017-11-02 15:33:00 [scrapy] INFO: Enabled item pipelines:
+['Fetch_258Net.pipelines.Fetch258NetPipeline']
+2017-11-02 15:33:00 [scrapy] INFO: Spider opened
+2017-11-02 15:33:00 [scrapy] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-11-02 15:33:00 [258net] INFO: fetch new url=http://627365.shop.258.com
+2017-11-02 15:34:00 [scrapy] INFO: Crawled 1 pages (at 1 pages/min), scraped 0 items (at 0 items/min)
+2017-11-02 15:35:00 [scrapy] INFO: Crawled 1 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-11-02 15:35:14 [scrapy] INFO: Received SIGINT, shutting down gracefully. Send again to force 
+2017-11-02 15:35:14 [scrapy] INFO: Closing spider (shutdown)
+2017-11-02 15:35:14 [scrapy] INFO: Received SIGINT twice, forcing unclean shutdown
+2017-11-02 15:35:43 [scrapy] INFO: Scrapy 1.3.3 started (bot: Fetch_258Net)
+2017-11-02 15:35:43 [scrapy] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'Fetch_258Net.spiders', 'ROBOTSTXT_OBEY': True, 'LOG_LEVEL': 'INFO', 'CONCURRENT_REQUESTS': 32, 'SPIDER_MODULES': ['Fetch_258Net.spiders'], 'BOT_NAME': 'Fetch_258Net', 'USER_AGENT': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36', 'LOG_FILE': 'logs/spider.log', 'DOWNLOAD_DELAY': 3}
+2017-11-02 15:35:43 [py.warnings] WARNING: /working/kangchaochao/leads/fetch_258net/Fetch_258Net/Fetch_258Net/extensions/AutoThrottleWithList.py:3: ScrapyDeprecationWarning: Module `scrapy.contrib.throttle` is deprecated, use `scrapy.extensions.throttle` instead
+  from scrapy.contrib.throttle import AutoThrottle
+
+2017-11-02 15:35:43 [scrapy] INFO: Enabled extensions:
+['scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2017-11-02 15:35:43 [scrapy] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2017-11-02 15:35:43 [scrapy] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2017-11-02 15:35:43 [scrapy] INFO: Enabled item pipelines:
+['Fetch_258Net.pipelines.Fetch258NetPipeline']
+2017-11-02 15:35:43 [scrapy] INFO: Spider opened
+2017-11-02 15:35:43 [scrapy] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-11-02 15:35:43 [258net] INFO: fetch new url=http://627365.shop.258.com
+2017-11-02 15:36:43 [scrapy] INFO: Crawled 2 pages (at 2 pages/min), scraped 0 items (at 0 items/min)
+2017-11-02 15:36:54 [258net] INFO:  . company_name:保定月浩汽车用品制造有限公司, url=http://627365.shop.258.com 
+2017-11-02 15:36:54 [scrapy] INFO: Closing spider (finished)
+2017-11-02 15:36:54 [scrapy] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 980,
+ 'downloader/request_count': 3,
+ 'downloader/request_method_count/GET': 3,
+ 'downloader/response_bytes': 28140,
+ 'downloader/response_count': 3,
+ 'downloader/response_status_count/200': 3,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2017, 11, 2, 7, 36, 54, 956313),
+ 'log_count/INFO': 10,
+ 'log_count/WARNING': 1,
+ 'request_depth_max': 1,
+ 'response_received_count': 3,
+ 'scheduler/dequeued': 2,
+ 'scheduler/dequeued/memory': 2,
+ 'scheduler/enqueued': 2,
+ 'scheduler/enqueued/memory': 2,
+ 'start_time': datetime.datetime(2017, 11, 2, 7, 35, 43, 940220)}
+2017-11-02 15:36:54 [scrapy] INFO: Spider closed (finished)
+2017-11-02 15:45:30 [scrapy] INFO: Scrapy 1.3.3 started (bot: Fetch_258Net)
+2017-11-02 15:45:30 [scrapy] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'Fetch_258Net.spiders', 'ROBOTSTXT_OBEY': True, 'LOG_LEVEL': 'INFO', 'CONCURRENT_REQUESTS': 32, 'SPIDER_MODULES': ['Fetch_258Net.spiders'], 'BOT_NAME': 'Fetch_258Net', 'USER_AGENT': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36', 'LOG_FILE': 'logs/spider.log', 'DOWNLOAD_DELAY': 3}
+2017-11-02 15:45:30 [py.warnings] WARNING: /working/kangchaochao/leads/fetch_258net/Fetch_258Net/Fetch_258Net/extensions/AutoThrottleWithList.py:3: ScrapyDeprecationWarning: Module `scrapy.contrib.throttle` is deprecated, use `scrapy.extensions.throttle` instead
+  from scrapy.contrib.throttle import AutoThrottle
+
+2017-11-02 15:45:30 [scrapy] INFO: Enabled extensions:
+['scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2017-11-02 15:45:31 [scrapy] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2017-11-02 15:45:31 [scrapy] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2017-11-02 15:45:31 [scrapy] INFO: Enabled item pipelines:
+['Fetch_258Net.pipelines.Fetch258NetPipeline']
+2017-11-02 15:45:31 [scrapy] INFO: Spider opened
+2017-11-02 15:45:31 [scrapy] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-11-02 15:45:31 [258net] INFO: fetch new url=http://627365.shop.258.com
+2017-11-02 15:46:09 [258net] INFO:  . company_name:保定月浩汽车用品制造有限公司, url=http://627365.shop.258.com 
+2017-11-02 15:46:09 [scrapy] INFO: Closing spider (finished)
+2017-11-02 15:46:09 [scrapy] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 980,
+ 'downloader/request_count': 3,
+ 'downloader/request_method_count/GET': 3,
+ 'downloader/response_bytes': 28140,
+ 'downloader/response_count': 3,
+ 'downloader/response_status_count/200': 3,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2017, 11, 2, 7, 46, 9, 222563),
+ 'log_count/INFO': 9,
+ 'log_count/WARNING': 1,
+ 'request_depth_max': 1,
+ 'response_received_count': 3,
+ 'scheduler/dequeued': 2,
+ 'scheduler/dequeued/memory': 2,
+ 'scheduler/enqueued': 2,
+ 'scheduler/enqueued/memory': 2,
+ 'start_time': datetime.datetime(2017, 11, 2, 7, 45, 31, 29246)}
+2017-11-02 15:46:09 [scrapy] INFO: Spider closed (finished)
+2017-11-02 15:49:24 [scrapy] INFO: Scrapy 1.3.3 started (bot: Fetch_258Net)
+2017-11-02 15:49:24 [scrapy] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'Fetch_258Net.spiders', 'ROBOTSTXT_OBEY': True, 'LOG_LEVEL': 'INFO', 'CONCURRENT_REQUESTS': 32, 'SPIDER_MODULES': ['Fetch_258Net.spiders'], 'BOT_NAME': 'Fetch_258Net', 'USER_AGENT': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36', 'LOG_FILE': 'logs/spider.log', 'DOWNLOAD_DELAY': 0.2}
+2017-11-02 15:49:24 [py.warnings] WARNING: /working/kangchaochao/leads/fetch_258net/Fetch_258Net/Fetch_258Net/extensions/AutoThrottleWithList.py:3: ScrapyDeprecationWarning: Module `scrapy.contrib.throttle` is deprecated, use `scrapy.extensions.throttle` instead
+  from scrapy.contrib.throttle import AutoThrottle
+
+2017-11-02 15:49:24 [scrapy] INFO: Enabled extensions:
+['scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2017-11-02 15:49:24 [scrapy] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2017-11-02 15:49:24 [scrapy] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2017-11-02 15:49:24 [scrapy] INFO: Enabled item pipelines:
+['Fetch_258Net.pipelines.Fetch258NetPipeline']
+2017-11-02 15:49:24 [scrapy] INFO: Spider opened
+2017-11-02 15:49:24 [scrapy] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-11-02 15:49:24 [258net] INFO: fetch new url=http://627365.shop.258.com
+2017-11-02 15:50:24 [scrapy] INFO: Crawled 2 pages (at 2 pages/min), scraped 0 items (at 0 items/min)
+2017-11-02 15:51:24 [scrapy] INFO: Crawled 2 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-11-02 15:52:24 [scrapy] INFO: Crawled 2 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-11-02 15:52:32 [scrapy] ERROR: Error downloading <GET http://627365.shop.258.com/contact/>
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 1126, in _inlineCallbacks
+    result = result.throwExceptionIntoGenerator(g)
+  File "/usr/local/lib/python2.7/site-packages/twisted/python/failure.py", line 389, in throwExceptionIntoGenerator
+    return g.throw(self.type, self.value, self.tb)
+  File "/usr/local/lib/python2.7/site-packages/scrapy/core/downloader/middleware.py", line 43, in process_request
+    defer.returnValue((yield download_func(request=request,spider=spider)))
+  File "/usr/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/usr/local/lib/python2.7/site-packages/scrapy/core/downloader/handlers/http11.py", line 306, in _cb_timeout
+    raise TimeoutError("Getting %s took longer than %s seconds." % (url, timeout))
+TimeoutError: User timeout caused connection failure: Getting http://627365.shop.258.com/contact/ took longer than 180.0 seconds..
+2017-11-02 15:52:32 [scrapy] INFO: Closing spider (finished)
+2017-11-02 15:52:32 [scrapy] INFO: Dumping Scrapy stats:
+{'downloader/exception_count': 1,
+ 'downloader/exception_type_count/twisted.internet.error.TimeoutError': 1,
+ 'downloader/request_bytes': 980,
+ 'downloader/request_count': 3,
+ 'downloader/request_method_count/GET': 3,
+ 'downloader/response_bytes': 16258,
+ 'downloader/response_count': 2,
+ 'downloader/response_status_count/200': 2,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2017, 11, 2, 7, 52, 32, 213036),
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 11,
+ 'log_count/WARNING': 1,
+ 'request_depth_max': 1,
+ 'response_received_count': 2,
+ 'scheduler/dequeued': 2,
+ 'scheduler/dequeued/memory': 2,
+ 'scheduler/enqueued': 2,
+ 'scheduler/enqueued/memory': 2,
+ 'start_time': datetime.datetime(2017, 11, 2, 7, 49, 24, 760320)}
+2017-11-02 15:52:32 [scrapy] INFO: Spider closed (finished)
+2017-11-02 15:55:10 [scrapy] INFO: Scrapy 1.3.3 started (bot: Fetch_258Net)
+2017-11-02 15:55:10 [scrapy] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'Fetch_258Net.spiders', 'ROBOTSTXT_OBEY': True, 'LOG_LEVEL': 'INFO', 'CONCURRENT_REQUESTS': 32, 'SPIDER_MODULES': ['Fetch_258Net.spiders'], 'BOT_NAME': 'Fetch_258Net', 'USER_AGENT': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36', 'LOG_FILE': 'logs/spider.log', 'DOWNLOAD_DELAY': 0.2}
+2017-11-02 15:55:11 [py.warnings] WARNING: /working/kangchaochao/leads/fetch_258net/Fetch_258Net/Fetch_258Net/extensions/AutoThrottleWithList.py:3: ScrapyDeprecationWarning: Module `scrapy.contrib.throttle` is deprecated, use `scrapy.extensions.throttle` instead
+  from scrapy.contrib.throttle import AutoThrottle
+
+2017-11-02 15:55:11 [scrapy] INFO: Enabled extensions:
+['scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2017-11-02 15:55:11 [scrapy] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2017-11-02 15:55:11 [scrapy] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2017-11-02 15:55:11 [scrapy] INFO: Enabled item pipelines:
+['Fetch_258Net.pipelines.Fetch258NetPipeline']
+2017-11-02 15:55:11 [scrapy] INFO: Spider opened
+2017-11-02 15:55:11 [scrapy] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-11-02 15:55:13 [scrapy] INFO: Closing spider (finished)
+2017-11-02 15:55:13 [scrapy] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 604,
+ 'downloader/request_count': 2,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/response_bytes': 12204,
+ 'downloader/response_count': 2,
+ 'downloader/response_status_count/200': 2,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2017, 11, 2, 7, 55, 13, 24605),
+ 'log_count/INFO': 7,
+ 'log_count/WARNING': 1,
+ 'response_received_count': 2,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2017, 11, 2, 7, 55, 11, 358120)}
+2017-11-02 15:55:13 [scrapy] INFO: Spider closed (finished)
+2017-11-02 15:56:46 [scrapy] INFO: Scrapy 1.3.3 started (bot: Fetch_258Net)
+2017-11-02 15:56:46 [scrapy] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'Fetch_258Net.spiders', 'LOG_LEVEL': 'INFO', 'CONCURRENT_REQUESTS': 32, 'SPIDER_MODULES': ['Fetch_258Net.spiders'], 'BOT_NAME': 'Fetch_258Net', 'USER_AGENT': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36', 'LOG_FILE': 'logs/spider.log', 'DOWNLOAD_DELAY': 0.2}
+2017-11-02 15:56:47 [py.warnings] WARNING: /working/kangchaochao/leads/fetch_258net/Fetch_258Net/Fetch_258Net/extensions/AutoThrottleWithList.py:3: ScrapyDeprecationWarning: Module `scrapy.contrib.throttle` is deprecated, use `scrapy.extensions.throttle` instead
+  from scrapy.contrib.throttle import AutoThrottle
+
+2017-11-02 15:56:47 [scrapy] INFO: Enabled extensions:
+['scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2017-11-02 15:56:47 [scrapy] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2017-11-02 15:56:47 [scrapy] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2017-11-02 15:56:47 [scrapy] INFO: Enabled item pipelines:
+['Fetch_258Net.pipelines.Fetch258NetPipeline']
+2017-11-02 15:56:47 [scrapy] INFO: Spider opened
+2017-11-02 15:56:47 [scrapy] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-11-02 15:56:47 [258net] INFO: fetch new url=http://627365.shop.258.com
+2017-11-02 15:57:47 [scrapy] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-11-02 15:58:47 [scrapy] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-11-02 15:59:08 [scrapy] INFO: Received SIGINT, shutting down gracefully. Send again to force 
+2017-11-02 15:59:08 [scrapy] INFO: Closing spider (shutdown)
+2017-11-02 15:59:09 [scrapy] INFO: Received SIGINT twice, forcing unclean shutdown
+2017-11-02 15:59:11 [scrapy] INFO: Scrapy 1.3.3 started (bot: Fetch_258Net)
+2017-11-02 15:59:11 [scrapy] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'Fetch_258Net.spiders', 'LOG_LEVEL': 'INFO', 'CONCURRENT_REQUESTS': 32, 'SPIDER_MODULES': ['Fetch_258Net.spiders'], 'BOT_NAME': 'Fetch_258Net', 'USER_AGENT': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36', 'LOG_FILE': 'logs/spider.log', 'DOWNLOAD_DELAY': 0.2}
+2017-11-02 15:59:11 [py.warnings] WARNING: /working/kangchaochao/leads/fetch_258net/Fetch_258Net/Fetch_258Net/extensions/AutoThrottleWithList.py:3: ScrapyDeprecationWarning: Module `scrapy.contrib.throttle` is deprecated, use `scrapy.extensions.throttle` instead
+  from scrapy.contrib.throttle import AutoThrottle
+
+2017-11-02 15:59:11 [scrapy] INFO: Enabled extensions:
+['scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2017-11-02 15:59:11 [scrapy] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2017-11-02 15:59:11 [scrapy] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2017-11-02 15:59:11 [scrapy] INFO: Enabled item pipelines:
+['Fetch_258Net.pipelines.Fetch258NetPipeline']
+2017-11-02 15:59:11 [scrapy] INFO: Spider opened
+2017-11-02 15:59:11 [scrapy] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-11-02 15:59:11 [258net] INFO: fetch new url=http://627365.shop.258.com/
+2017-11-02 16:00:11 [scrapy] INFO: Crawled 1 pages (at 1 pages/min), scraped 0 items (at 0 items/min)
+2017-11-02 16:01:11 [scrapy] INFO: Crawled 1 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-11-02 16:02:11 [scrapy] INFO: Crawled 1 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-11-02 16:02:12 [scrapy] INFO: Received SIGINT, shutting down gracefully. Send again to force 
+2017-11-02 16:02:12 [scrapy] INFO: Closing spider (shutdown)
+2017-11-02 16:02:12 [scrapy] INFO: Received SIGINT twice, forcing unclean shutdown
+2017-11-02 16:09:27 [scrapy] INFO: Scrapy 1.3.3 started (bot: Fetch_258Net)
+2017-11-02 16:09:27 [scrapy] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'Fetch_258Net.spiders', 'LOG_LEVEL': 'INFO', 'CONCURRENT_REQUESTS': 32, 'SPIDER_MODULES': ['Fetch_258Net.spiders'], 'BOT_NAME': 'Fetch_258Net', 'USER_AGENT': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36', 'LOG_FILE': 'logs/spider.log', 'DOWNLOAD_DELAY': 0.2}
+2017-11-02 16:09:28 [py.warnings] WARNING: /working/kangchaochao/leads/fetch_258net/Fetch_258Net/Fetch_258Net/extensions/AutoThrottleWithList.py:3: ScrapyDeprecationWarning: Module `scrapy.contrib.throttle` is deprecated, use `scrapy.extensions.throttle` instead
+  from scrapy.contrib.throttle import AutoThrottle
+
+2017-11-02 16:09:28 [scrapy] INFO: Enabled extensions:
+['scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2017-11-02 16:09:28 [scrapy] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2017-11-02 16:09:28 [scrapy] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2017-11-02 16:09:28 [scrapy] INFO: Enabled item pipelines:
+['Fetch_258Net.pipelines.Fetch258NetPipeline']
+2017-11-02 16:09:28 [scrapy] INFO: Spider opened
+2017-11-02 16:09:28 [scrapy] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-11-02 16:09:28 [258net] INFO: fetch new url=http://shanen.shop.258.com
+2017-11-02 16:10:28 [scrapy] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-11-02 16:10:34 [258net] INFO:  . company_name:广州善恩化妆品有限公司, url=http://shanen.shop.258.com 
+2017-11-02 16:10:34 [scrapy] ERROR: Error downloading <GET http://shanen.shop.258.comabout/>: DNS lookup failed: address 'shanen.shop.258.comabout' not found: [Errno -2] Name or service not known.
+2017-11-02 16:10:34 [scrapy] INFO: Closing spider (finished)
+2017-11-02 16:10:34 [scrapy] INFO: Dumping Scrapy stats:
+{'downloader/exception_count': 1,
+ 'downloader/exception_type_count/twisted.internet.error.DNSLookupError': 1,
+ 'downloader/request_bytes': 1021,
+ 'downloader/request_count': 3,
+ 'downloader/request_method_count/GET': 3,
+ 'downloader/response_bytes': 36302,
+ 'downloader/response_count': 2,
+ 'downloader/response_status_count/200': 2,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2017, 11, 2, 8, 10, 34, 501638),
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 10,
+ 'log_count/WARNING': 1,
+ 'request_depth_max': 2,
+ 'response_received_count': 2,
+ 'scheduler/dequeued': 3,
+ 'scheduler/dequeued/memory': 3,
+ 'scheduler/enqueued': 3,
+ 'scheduler/enqueued/memory': 3,
+ 'start_time': datetime.datetime(2017, 11, 2, 8, 9, 28, 173294)}
+2017-11-02 16:10:34 [scrapy] INFO: Spider closed (finished)

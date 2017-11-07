@@ -1,0 +1,5 @@
+
+抓取258网 分为两个抓取程序
+一：根据行业分类，抓取公司的url，单独存到一个mongo表里(258_info/company_url)，其中这个表status状态：0 已抓取 1 未抓取
+二：根据company_url中的每个url抓取该公司的详细信息，每成功抓一个url，更新company_url中的status标记，这样当company_url表中的所有status为1时，则抓取完毕，程序停掉。
+三：存储公司信息表为content_tbl ,其中 两个表的唯一索引都为 url
